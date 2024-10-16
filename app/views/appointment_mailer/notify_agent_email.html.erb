@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+  </head>
+  <body>
+		<h4>New appointment was created.</h4>
+		<dl>
+			<dt>Date: </dt>
+			<dd><%= @appointment.date %></dd>
+
+			<dt>Time of the day: </dt>
+			<dd><%= @appointment.time_slot %></dd>
+			
+			<dt>Property ID: </dt>
+			<dd><%= @property.id %></dd>
+
+			<dt>Client Name: </dt>
+			<dd><%= @appointment.client_name %></dd>
+
+			<dt>Client Address: </dt>
+			<dd><%= @appointment.client_address %></dd>
+
+			<dt>Client Phone Number: </dt>
+			<dd><%= @appointment.client_phone_number %></dd>
+
+			<dt>Additional query: </dt>
+			<dd><%= @appointment.addtional_query %></dd>
+		</dl>
+
+		<em>Contact the client by the given phone number ASAP.</em>
+	</body>
+</html>

@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv='Content-Type' />
+    <title>Document</title>
+  </head>
+  <body>
+		<h3>Welcome to Amar-Jomi, <%= @agent.name %></h3>
+
+		You are now an agent of Amar-Jomi website, now you can post properties and edit them as you wish.
+		Please follow this link to <%= link_to 'login', new_agent_session_url %>
+	</body>
+</html>
